@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Whack-a-mole</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="score">
+        <div class="score-pk">
+          <h2 class="score-pk__text">Computer Score:</h2>
+          <h4 class="score-pk__number">0</h4>
+        </div>
+        <div class="score-player">
+          <h2 class="score-player__text">Your Score:</h2>
+          <h4 class="score-player__number">0</h4>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-start btn-primary">Start Game</button>
+        <button class="btn btn-stop btn-danger">Stop Game</button>
+      </div>
+      <div class="level">
+        <h3 class="level-text">Choice Level:</h3>
+        <select
+          name="level"
+          id="level"
+          class="form-select"
+          multiple
+          aria-label="multiple select example"
+        >
+          <option value="easy" class="level-easy" selected>easy</option>
+          <option value="medium" class="level-medium">medium</option>
+          <option value="hard" class="level-hard">hard</option>
+        </select>
+      </div>
+    </div>
+
+    <table>
+      <tbody>
+        <tr>
+          <td id="cell-1"></td>
+          <td id="cell-2"></td>
+          <td id="cell-3"></td>
+          <td id="cell-4"></td>
+          <td id="cell-5"></td>
+          <td id="cell-6"></td>
+          <td id="cell-7"></td>
+          <td id="cell-8"></td>
+          <td id="cell-9"></td>
+          <td id="cell-10"></td>
+        </tr>
+        <tr>
+          <td id="cell-11"></td>
+          <td id="cell-12"></td>
+          <td id="cell-13"></td>
+          <td id="cell-14"></td>
+          <td id="cell-15"></td>
+          <td id="cell-16"></td>
+          <td id="cell-17"></td>
+          <td id="cell-18"></td>
+          <td id="cell-19"></td>
+          <td id="cell-20"></td>
+        </tr>
+        <!-- Repeat for remaining rows -->
+      </tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

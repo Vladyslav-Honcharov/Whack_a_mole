@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("https://i.pinimg.com/564x/ba/b0/d3/bab0d35d91f3adbae37807d219e66909.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.header {
+  margin-top: 1vh;
+  color: azure;
+  display: flex;
+  justify-content: space-around;
+}
+.score {
+  align-self: center;
+}
+option:hover {
+  cursor: pointer;
+}
+.btns {
+  align-self: center;
+}
+.level-text {
+  margin-bottom: 50px;
+}
+table {
+  width: 80%;
+  height: 60vh;
+  margin: 10vh auto;
+}
+td:hover {
+  background: rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+td {
+  border: 2px solid rgb(117, 168, 176, 0.8);
+}
